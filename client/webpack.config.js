@@ -50,7 +50,23 @@ module.exports = () => {
     ],
 
     module: {
-      rules: [],
+      rules: [
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          // babel
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+              plugins: [
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
+        },
+      ],
     },
   };
 };
