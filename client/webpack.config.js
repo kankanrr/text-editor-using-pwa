@@ -43,7 +43,7 @@ module.exports = () => {
           {
             src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512],
-            destination: path.join("assests", "icons"),
+            destination: path.join("asests", "icons"),
           },
         ],
       }),
@@ -51,6 +51,10 @@ module.exports = () => {
 
     module: {
       rules: [
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
