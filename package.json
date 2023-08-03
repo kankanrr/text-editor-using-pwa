@@ -1,7 +1,7 @@
 {
   "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "A PWA text editor",
   "main": "server.js",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
@@ -12,10 +12,9 @@
     "client": "cd client && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "LMB",
   "license": "ISC",
   "dependencies": {
-    "babel-loader": "^9.1.3",
     "express": "^4.17.1",
     "if-env": "^1.0.4"
   },
