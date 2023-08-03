@@ -4,7 +4,7 @@
 
 This project is a text editor using PWA that is accessed in the browser. Users can create notes and the app is also be avaliable offline by loading via Heroku and clicking the downloadable app button in the browser bar to install.
 
-Heroku link: N/A - as of right now
+Heroku link: https://jate-pwa-text-editor-app-f2a8063986cc.herokuapp.com/
 
 ## Installation
 
